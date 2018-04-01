@@ -1,0 +1,18 @@
+
+	<body ng-app="User" style="background: whitesmoke;"  >
+	    	<div class="container-fluid" ng-Controller="UserController">
+	            <div class="verifier">                
+	                <div style="margin: 0 30px;">
+	                    <h4>Saisir votre Email</h4>
+	                </div>
+	                <p style="text-align: center;color: red;margin: 10px 30px;" id="emailError"></p>
+	                <input type="text" placeholder="Adresse email" ng-model="email"/>
+	                <div class="validerEmail">
+	                    <div>
+	                        <button class="btn btn-primary" ng-click="verifierEmail()">Rechercher</button>
+	                        <button class="btn btn-default">Annuler</button>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	</body>

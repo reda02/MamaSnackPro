@@ -1,0 +1,35 @@
+
+<div class="container" style="padding: 50px 0;">
+   <div style="width: 90%;margin: auto;" ng-repeat="c in Commandes">
+       <div class="mamaName">
+           <p style="margin: 0;">{{c.mama.prenomUser}} {{c.mama.nomUser}}</p>
+       </div>
+       <div class="commande-modal">
+           <div class="commande-produit" ng-repeat="l in c.items">
+               <div class="col-sm-2">
+                   <div class="produit-img"><img src="img/plat.jpg"/></div>
+               </div>
+               <div class="col-sm-7">
+                   <p>Prix: {{l.produit.prix}}</p>
+                   <p>Qte: </p>
+               </div>
+               <div class="col-sm-2">
+                   <div style="padding: 20px 0;"><strong>Total: </strong></div>
+               </div>
+               <div class="col-sm-1">
+                   <button style="margin: 20px auto;"><img src="img/trash.png"></button>
+               </div>
+           </div>
+           <div style="height: 30px;">
+               <div class="col-sm-3" style="float: right; border-bottom: 1px solid rgba(0,0,0,0.2);margin-top: 20px;">
+                    <strong>Total:</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+	$(document).ready(function(){
+		$("body").css("background","whitesmoke");
+	});
+</script>
