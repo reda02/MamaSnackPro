@@ -1,0 +1,94 @@
+.message-box{
+    position: absolute;
+    width: 40%;
+    height: 500px;
+    border: 1px solid rgba(0,0,0,0.2);
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+.message-header{
+    height: 50px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+}
+.message-header p{
+    text-align: center;
+    margin: 0;
+    font-weight: bold;
+    margin: auto;
+    padding: 15px 0;
+}
+.message-bottom{
+    height: 50px;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    position: absolute;
+    bottom: 0;
+    right: 0;  
+    left: 0;
+}
+form{
+    height: 100%;
+}
+#msg-sent{
+    resize: none;
+    border: 0;
+    height: 49px;
+    font-size: 18px;
+    padding: 12px 10px;
+    overflow: hidden;
+}
+textarea:focus{
+    outline: 0;
+}
+.sent-modal{
+    font-weight: bold;
+    font-size: 17px;
+    color: dodgerblue;
+    padding: 10px 3px;
+    margin: 0;
+    text-align: center;
+}
+#btn-sent{
+    border:0;
+    background: white;
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 0;
+    margin: 15px 25px;
+    height: 20px;
+    width: 40px; ;
+}
+#btn-sent:hover{
+    opacity: 0.7;
+}
+#sent:hover{
+    opacity: 1;
+}
+.messages{
+    padding: 10px 0;
+    overflow-y: auto;
+    height: 400px;
+}
+.receive,.sent{
+    height: auto;
+    max-width: 270px;
+    width: auto;
+    display: inline-table;
+    background: lightgray;
+    padding: 5px 5px;
+    margin: 2px 10px; 0 10px; 
+    border-radius: 5px;
+    float: left;
+}
+.sent{
+    float: right;
+    background-color: dodgerblue;
+    color: white;
+}
+.msg-block{
+    width: 100%;
+    float:left;
+}

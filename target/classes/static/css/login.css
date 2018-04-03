@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    padding-top: 0.1px;
+}
+body{
+    background: rgba(0,0,0,0.02);
+}
+.login-modal{
+    width: 350px;
+    margin: auto;
+    margin-top: 150px;
+}
+h1{
+    text-align: center;
+    padding: 10px 0;
+}
+.login-form{
+    background: white;
+    padding: 15px 22px;
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 3px;
+}
+#email,#password{
+    width: 100%;
+    border: 0;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    padding: 5px;
+    height: 30px;
+    background: rgba(0,0,0,0.02);
+}
+#password{
+    margin-top: 8px;
+}
+#connect{
+    width: 100%;
+    margin-top: 8px;
+    border: 0;
+    border-radius: 3px;
+    color: white;
+    background-color: deepskyblue;
+    height: 30px;
+    font-weight: bold;
+}
+
+.verifier{
+    width: 500px;
+    margin: auto;
+    background: white;
+    border: 1px solid rgba(0,0,0,0.1);
+    padding-top: 20px;
+    margin-top: 200px;
+}
+.verifier h4{
+    margin: 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 10px;
+}
+.verifier input[type="text"]{
+    width: 88%;
+    margin: 10px 0;
+    margin-left: 30px;
+    padding-left: 5px;
+}
+.validerEmail{
+    background: rgba(0,0,0,0.1);
+    border-top: 1px solid rgba(0,0,0,0.1);
+    height: auto;
+    width: 100%;
+    padding: 10px 30px;
+}
+#emailError{
+    display: none;
+}
+.verifier input[type="password"]{
+    width: 88%;
+    margin: 10px 0;
+    margin-left: 30px;
+    padding-left: 5px;
+}
