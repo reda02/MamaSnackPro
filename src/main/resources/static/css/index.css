@@ -18,6 +18,22 @@ header{
     padding: 9px 20px;
     z-index: 1000;
 }
+.menu{
+	background:white;
+	width:250px;
+	border-radius:5px;
+	padding:10px 5px;
+}
+.menu .menu-item{
+	height:100%;
+	font-weight: bold;
+	text-align: center;
+	cursor:pointer;
+	color:black;
+}
+.menu .menu-item:hover{
+	color:blue;
+}
 .compte{
     cursor: pointer;
 	width:82px;

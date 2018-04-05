@@ -44,7 +44,6 @@ app.controller('docController',
         };
         
         $scope.edit = function(id){
-        	alert($scope.selectedProduct.prix);
             var file = $scope.file;
             var select=false
      		if(document.getElementById("select").checked)
