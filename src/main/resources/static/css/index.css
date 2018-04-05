@@ -20,9 +20,9 @@ header{
 }
 .menu{
 	background:white;
-	width:250px;
 	border-radius:5px;
 	padding:10px 5px;
+	margin:auto;
 }
 .menu .menu-item{
 	height:100%;
