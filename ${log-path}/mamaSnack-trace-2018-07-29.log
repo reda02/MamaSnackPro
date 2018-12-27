@@ -1,0 +1,20 @@
+[INFO ] 2018-07-29 15:21:24.798 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 2256 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 15:21:24.831 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 15:21:37.738 [main] MamasnackWsApplication - Started MamasnackWsApplication in 13.624 seconds (JVM running for 21.141)
+[INFO ] 2018-07-29 17:42:01.411 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 7724 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 17:42:01.438 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 17:42:10.143 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.397 seconds (JVM running for 12.343)
+[ERROR] 2018-07-29 18:16:44.590 [http-nio-8080-exec-9] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service modifyLigneDeCommande : 
+[ERROR] 2018-07-29 20:57:45.823 [http-nio-8080-exec-9] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouterProduit : org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Produit.categorie -> com.mamasnack.entities.Categorie; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Produit.categorie -> com.mamasnack.entities.Categorie
+[INFO ] 2018-07-29 22:00:05.774 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 12836 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 22:00:05.786 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 22:00:17.206 [main] MamasnackWsApplication - Started MamasnackWsApplication in 11.982 seconds (JVM running for 13.484)
+[INFO ] 2018-07-29 22:05:29.375 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 13888 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 22:05:29.397 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 22:05:37.933 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.007 seconds (JVM running for 12.751)
+[INFO ] 2018-07-29 22:28:36.392 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 9740 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 22:28:36.407 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 22:28:45.309 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.304 seconds (JVM running for 10.624)
+[INFO ] 2018-07-29 22:53:43.242 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 9244 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-29 22:53:43.257 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-29 22:53:54.769 [main] MamasnackWsApplication - Started MamasnackWsApplication in 12.161 seconds (JVM running for 14.216)

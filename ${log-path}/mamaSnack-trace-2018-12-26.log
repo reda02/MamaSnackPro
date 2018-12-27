@@ -1,0 +1,185 @@
+[INFO ] 2018-12-26 11:34:20.993 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 3735 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 11:34:21.000 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 11:34:29.160 [main] MamasnackWsApplication - Started MamasnackWsApplication in 8.677 seconds (JVM running for 10.837)
+[INFO ] 2018-12-26 11:34:56.120 [http-nio-8080-exec-4] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 11:34:59.085 [http-nio-8080-exec-1] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 11:35:17.433 [http-nio-8080-exec-5] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service updateuser : query did not return a unique result: 4; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 4
+[INFO ] 2018-12-26 11:35:19.581 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 12:03:16.988 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 12:34:47.246 [http-nio-8080-exec-8] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[ERROR] 2018-12-26 12:46:49.869 [http-nio-8080-exec-3] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[ERROR] 2018-12-26 12:48:10.915 [http-nio-8080-exec-9] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[INFO ] 2018-12-26 12:48:49.666 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 12:58:37.091 [http-nio-8080-exec-5] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 13:10:06.429 [http-nio-8080-exec-9] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service deleteuser : User inexistant !
+[INFO ] 2018-12-26 13:16:31.526 [http-nio-8080-exec-2] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 13:18:05.426 [http-nio-8080-exec-9] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service deleteuser : could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2018-12-26 13:31:07.218 [http-nio-8080-exec-2] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[ERROR] 2018-12-26 13:31:08.668 [http-nio-8080-exec-4] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[INFO ] 2018-12-26 13:32:56.979 [http-nio-8080-exec-4] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 13:38:32.981 [http-nio-8080-exec-2] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[ERROR] 2018-12-26 13:44:40.917 [http-nio-8080-exec-6] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:44:49.077 [http-nio-8080-exec-8] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:44:49.881 [http-nio-8080-exec-10] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[INFO ] 2018-12-26 13:44:59.765 [http-nio-8080-exec-4] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 13:45:41.568 [http-nio-8080-exec-1] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[ERROR] 2018-12-26 13:45:58.272 [http-nio-8080-exec-9] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:00.331 [http-nio-8080-exec-5] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:00.482 [http-nio-8080-exec-4] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:00.622 [http-nio-8080-exec-1] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:07.032 [http-nio-8080-exec-9] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:07.933 [http-nio-8080-exec-3] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:38.963 [http-nio-8080-exec-2] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:46:39.789 [http-nio-8080-exec-8] UserMetierImpl - com.mamasnack.metier.UserMetierImplune erreur est produite lors de l'exécution du web service updateuser : 
+[ERROR] 2018-12-26 13:47:57.585 [http-nio-8080-exec-10] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[INFO ] 2018-12-26 15:04:20.936 [http-nio-8080-exec-7] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 15:10:08.158 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 8400 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 15:10:08.166 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 15:10:13.824 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.135 seconds (JVM running for 7.675)
+[ERROR] 2018-12-26 15:11:45.500 [http-nio-8080-exec-6] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service attribueRole() : User inexistant !
+[ERROR] 2018-12-26 15:12:39.972 [http-nio-8080-exec-10] UserMetierImpl - com.mamasnack.metier.UserMetierImplle role existe deja 6
+[ERROR] 2018-12-26 15:44:02.835 [http-nio-8080-exec-8] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service delete Role : could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[ERROR] 2018-12-26 16:14:50.318 [http-nio-8080-exec-2] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service getProduit : produit inexistant !
+[ERROR] 2018-12-26 16:21:11.994 [http-nio-8080-exec-6] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getUsers() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:18.477 [http-nio-8080-exec-7] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getUsers() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:19.352 [http-nio-8080-exec-8] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getUsers() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:19.990 [http-nio-8080-exec-9] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getUsers() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:20.496 [http-nio-8080-exec-10] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getUsers() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:24.107 [http-nio-8080-exec-1] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service findUserbyName() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:25.125 [http-nio-8080-exec-2] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service findUserbyName() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:25.320 [http-nio-8080-exec-3] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service findUserbyName() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[ERROR] 2018-12-26 16:21:25.488 [http-nio-8080-exec-4] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service findUserbyName() : could not extract ResultSet; SQL [n/a]; nested exception is org.hibernate.exception.SQLGrammarException: could not extract ResultSet
+[INFO ] 2018-12-26 16:23:03.561 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 9833 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 16:23:03.568 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 16:27:54.466 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 9997 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 16:27:54.473 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 16:27:59.757 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.662 seconds (JVM running for 7.184)
+[INFO ] 2018-12-26 16:31:18.883 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 10160 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 16:31:18.889 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 16:31:27.621 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.124 seconds (JVM running for 10.683)
+[ERROR] 2018-12-26 16:54:43.334 [http-nio-8080-exec-1] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service getProduit : produit inexistant !
+[ERROR] 2018-12-26 16:55:32.725 [http-nio-8080-exec-3] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service deleteProduit : produit inexistant !
+[ERROR] 2018-12-26 16:55:34.320 [http-nio-8080-exec-4] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service deleteProduit : produit inexistant !
+[INFO ] 2018-12-26 17:12:29.218 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 11474 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 17:12:29.225 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 11445 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 17:12:29.229 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 17:12:29.235 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 17:12:37.777 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.3 seconds (JVM running for 11.171)
+[INFO ] 2018-12-26 17:13:03.969 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 11578 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 17:13:03.975 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 17:13:08.613 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.01 seconds (JVM running for 6.387)
+[ERROR] 2018-12-26 17:18:46.468 [http-nio-8080-exec-10] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service adduser : could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2018-12-26 17:29:12.876 [http-nio-8080-exec-4] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 17:29:58.199 [http-nio-8080-exec-7] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplle nom de categorie existe deja ! 
+[ERROR] 2018-12-26 17:30:26.508 [http-nio-8080-exec-3] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplle nom de categorie existe deja ! 
+[INFO ] 2018-12-26 17:49:22.856 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 12093 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 17:49:22.863 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 17:49:41.113 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 12151 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 17:49:41.120 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 17:49:46.038 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.25 seconds (JVM running for 6.734)
+[ERROR] 2018-12-26 17:51:14.953 [http-nio-8080-exec-3] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouter Categorie : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[INFO ] 2018-12-26 17:53:40.720 [http-nio-8080-exec-2] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 18:15:47.320 [http-nio-8080-exec-7] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 18:29:09.861 [http-nio-8080-exec-10] CommandeRestService - getAllLigneDeCommande message
+[ERROR] 2018-12-26 18:30:14.838 [http-nio-8080-exec-2] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Commande.user -> com.mamasnack.entities.User; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Commande.user -> com.mamasnack.entities.User
+[ERROR] 2018-12-26 18:30:40.372 [http-nio-8080-exec-3] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Commande.user -> com.mamasnack.entities.User; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Commande.user -> com.mamasnack.entities.User
+[INFO ] 2018-12-26 18:32:21.829 [http-nio-8080-exec-7] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 18:32:53.159 [http-nio-8080-exec-8] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service getuser : User inexistant !
+[INFO ] 2018-12-26 18:33:50.908 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 18:37:47.999 [http-nio-8080-exec-3] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 18:38:05.944 [http-nio-8080-exec-4] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 18:44:07.781 [http-nio-8080-exec-6] CommandeMetierImpl - Info message
+[WARN ] 2018-12-26 18:44:07.782 [http-nio-8080-exec-6] CommandeMetierImpl - Warn message
+[ERROR] 2018-12-26 18:44:07.782 [http-nio-8080-exec-6] CommandeMetierImpl - Error message
+[ERROR] 2018-12-26 18:44:07.783 [http-nio-8080-exec-6] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service getLigneDeCommandeById : A JSONObject text must begin with '{' at character 1
+[ERROR] 2018-12-26 18:45:54.988 [http-nio-8080-exec-8] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addLigneDeCommande : produit inexistant !
+[ERROR] 2018-12-26 18:46:04.546 [http-nio-8080-exec-9] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addLigneDeCommande : produit inexistant !
+[ERROR] 2018-12-26 18:46:12.648 [http-nio-8080-exec-10] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addLigneDeCommande : produit inexistant !
+[ERROR] 2018-12-26 18:46:39.278 [http-nio-8080-exec-1] CommandeMetierImpl - com.mamasnack.metier.CommandeMetierImplune erreur est produite lors de l'exécution du web service addLigneDeCommande : 
+[INFO ] 2018-12-26 18:46:59.070 [http-nio-8080-exec-3] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 20:23:08.152 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 4318 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:23:08.158 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:23:14.176 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.414 seconds (JVM running for 8.12)
+[ERROR] 2018-12-26 20:29:25.817 [http-nio-8080-exec-1] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[INFO ] 2018-12-26 20:34:19.274 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 4892 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:34:19.283 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:34:24.242 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.357 seconds (JVM running for 6.749)
+[INFO ] 2018-12-26 20:50:20.700 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 5259 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:50:20.707 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:52:32.166 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 5329 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:52:32.179 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:52:37.385 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.604 seconds (JVM running for 6.726)
+[INFO ] 2018-12-26 20:57:39.378 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 5509 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:57:39.387 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:57:46.014 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.067 seconds (JVM running for 10.628)
+[INFO ] 2018-12-26 20:58:24.559 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 5598 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:58:24.569 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 20:59:06.675 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 5695 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 20:59:06.687 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:20:38.888 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6052 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:20:38.895 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:20:45.170 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.769 seconds (JVM running for 8.691)
+[INFO ] 2018-12-26 21:21:36.919 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6140 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:21:36.928 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:21:43.044 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.637 seconds (JVM running for 8.331)
+[INFO ] 2018-12-26 21:22:40.409 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6231 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:22:40.415 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:22:46.503 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.469 seconds (JVM running for 7.681)
+[INFO ] 2018-12-26 21:23:35.050 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6324 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:23:35.056 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:23:41.039 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.353 seconds (JVM running for 7.513)
+[INFO ] 2018-12-26 21:25:37.090 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6428 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:25:37.097 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:25:42.880 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.174 seconds (JVM running for 7.398)
+[ERROR] 2018-12-26 21:28:02.827 [http-nio-8080-exec-8] UserRestService - com.mamasnack.service.UserRestServiceune erreur est produite lors de l'exécution du web service adduser : could not execute statement; SQL [n/a]; constraint [null]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[INFO ] 2018-12-26 21:30:04.346 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6563 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:30:04.351 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:30:10.222 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.254 seconds (JVM running for 7.603)
+[INFO ] 2018-12-26 21:31:32.266 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6668 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:31:32.270 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:31:38.041 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.18 seconds (JVM running for 7.749)
+[INFO ] 2018-12-26 21:37:39.404 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 6833 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:37:39.417 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:37:44.406 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.351 seconds (JVM running for 7.802)
+[INFO ] 2018-12-26 21:39:50.789 [http-nio-8080-exec-3] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 21:39:52.374 [http-nio-8080-exec-8] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 21:41:54.024 [http-nio-8080-exec-4] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 21:42:53.837 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 7073 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:42:53.843 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:42:58.795 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.335 seconds (JVM running for 6.741)
+[INFO ] 2018-12-26 21:45:42.257 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 7449 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 21:45:42.275 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 21:45:48.734 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.014 seconds (JVM running for 9.451)
+[INFO ] 2018-12-26 21:45:58.258 [http-nio-8080-exec-1] CommandeMetierImpl - Info message
+[ERROR] 2018-12-26 21:50:35.898 [http-nio-8080-exec-8] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service updateuser : org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Produit.cuisine -> com.mamasnack.entities.Cuisine; nested exception is java.lang.IllegalStateException: org.hibernate.TransientPropertyValueException: object references an unsaved transient instance - save the transient instance before flushing : com.mamasnack.entities.Produit.cuisine -> com.mamasnack.entities.Cuisine
+[INFO ] 2018-12-26 21:59:30.781 [http-nio-8080-exec-2] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 22:03:00.264 [http-nio-8080-exec-9] CommandeMetierImpl - Info message
+[INFO ] 2018-12-26 22:08:09.408 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 7917 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:08:09.428 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:08:16.842 [main] MamasnackWsApplication - Started MamasnackWsApplication in 8.261 seconds (JVM running for 10.129)
+[ERROR] 2018-12-26 22:09:06.273 [http-nio-8080-exec-1] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : null
+[ERROR] 2018-12-26 22:13:56.093 [http-nio-8080-exec-3] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : null
+[ERROR] 2018-12-26 22:14:11.654 [http-nio-8080-exec-4] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : null
+[INFO ] 2018-12-26 22:18:36.288 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 8500 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:18:36.296 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:18:42.974 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.136 seconds (JVM running for 8.767)
+[ERROR] 2018-12-26 22:19:12.386 [http-nio-8080-exec-1] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : null
+[INFO ] 2018-12-26 22:23:57.537 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 8859 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:23:57.545 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:24:03.072 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.974 seconds (JVM running for 7.658)
+[ERROR] 2018-12-26 22:24:23.031 [http-nio-8080-exec-1] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addCommande : java.base/java.util.ArrayList cannot be cast to com.mamasnack.entities.Role
+[INFO ] 2018-12-26 22:25:37.155 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 9007 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:25:37.164 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:25:43.239 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.528 seconds (JVM running for 8.074)
+[ERROR] 2018-12-26 22:25:49.179 [http-nio-8080-exec-1] CommandeMetierImpl - com.mamasnack.metier.CommandeMetierImpluser n'est pas un mama
+[INFO ] 2018-12-26 22:50:53.654 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 9631 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:50:53.672 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:51:29.028 [main] MamasnackWsApplication - Starting MamasnackWsApplication on aboukhri with PID 9690 (/home/aboukhri/Desktop/MamaSnackPro/target/classes started by aboukhri in /home/aboukhri/Desktop/MamaSnackPro)
+[INFO ] 2018-12-26 22:51:29.035 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-12-26 22:51:33.764 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.081 seconds (JVM running for 6.538)
+[ERROR] 2018-12-26 22:52:02.128 [http-nio-8080-exec-1] CommandeMetierImpl - com.mamasnack.metier.CommandeMetierImpluser n'est pas un mama
+[ERROR] 2018-12-26 23:41:42.546 [http-nio-8080-exec-3] CommandeMetierImpl - com.mamasnack.metier.CommandeMetierImpluser n'est pas un mama
+[INFO ] 2018-12-26 23:45:42.539 [http-nio-8080-exec-6] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 23:48:14.939 [http-nio-8080-exec-2] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 23:48:15.967 [http-nio-8080-exec-3] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-12-26 23:48:16.734 [http-nio-8080-exec-4] CommandeRestService - getAllLigneDeCommande message

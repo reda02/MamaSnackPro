@@ -33,8 +33,5 @@ public interface UserMetier {
 	public String InitPwdVerifierEmail(String email) throws IOException;
 	public String updatePassword(User u);
 	
-	
-	
-	
 
 }

@@ -1,22 +1,26 @@
 app.controller('docController',
     ['$scope', '$rootScope','docService','$http','$cookies', function($scope, $rootScope, docService, $http,$cookies) {
 
-        $scope.file = '';
-
+        $scope.file = '';        
        $scope.upload = function(){
-            var fimport = $scope.file;
+    	 var fimport=document.getElementById("image1").src;
+    	  // $(function(){
+    		   //var fimport=$scope.file1;    		   
+    		   //var fimport=$(".img-field div:nth-child(1) img").attr("src");    		
+    		   //var fimport=$("#image1").attr("src");
+    		  // fimage3=$(".img-field img:nth-child(3)").attr("src");
+    	   
+            alert(fimport);
             var select=false
      		if(document.getElementById("selected").checked)
-     			select=true;
-     		else
-     			select=false;
+     			select=true;     		
                         
             var dataObj={
          		   "designation": document.getElementById("designation").value,
          		    "description": document.getElementById("description").value,
          		    "prix": document.getElementById("prix").value,
          		    "steleted": select,
-         		    "photo1": $cookies.get("idUser")+"2",
+         		    "photo1": $cookies.get("idUser")+document.getElementById("description").value,
          		   "photo2": "photo2",
         		    "photo3": "photo3",
         		    "photo4": "photo4",
@@ -26,11 +30,12 @@ app.controller('docController',
          		    "cuisine":{"idCuisine":$scope.selectedCui},
          		    "user":{"idUser":$cookies.get("idUser")}
      		};          
-            var files=[fimport,null,null,null,null];
-            docService.saveDoc(files,dataObj)
+            //var files=[fimport,null,null,null,null];
+            docService.saveDoc(fimport,dataObj)
                 .then(
                     function (response) {
                         alert("file uploaded successfully.");
+                        alert(response.data);
                         $http.get("http://localhost:8080/doc").success(
                             function(response) {
                             	alert("success");
@@ -41,15 +46,15 @@ app.controller('docController',
                     		alert("err");
                     }
                 );
+    	   //});
         };
         
         $scope.edit = function(id){
-            var file = $scope.file;
+        	
+        	var fimport = document.getElementById("image1").src;
             var select=false
      		if(document.getElementById("select").checked)
-     			select=true;
-     		else
-     			select=false;
+     			select=true;     		
             
             var dataObj={
             		"idProduit":id,
@@ -67,7 +72,8 @@ app.controller('docController',
          		    "cuisine":{"idCuisine":$scope.selectedCui},
          		    "user":{"idUser":$cookies.get("idUser")}
      		};
-            docService.editDoc(file,dataObj)
+            var files=[fimport,null,null,null,null];
+            docService.editDoc(files,dataObj)
                 .then(
                     function (response) {
                         alert("file uploaded successfully.");

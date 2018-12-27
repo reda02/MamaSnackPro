@@ -50,7 +50,7 @@ public class Commande  implements Serializable {
 	
 	
 	@ManyToOne
-	@JoinColumn(name ="idUser")
+	@JoinColumn(name ="idUser" , nullable = false)
 	private User user ;
 	
 	@ManyToOne

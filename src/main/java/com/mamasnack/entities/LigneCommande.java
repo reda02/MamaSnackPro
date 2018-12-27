@@ -33,6 +33,8 @@ public class LigneCommande   implements Serializable{
 	private Long idLigneCommande;
 	private int quantite;
 	
+	private double prix;
+	
 	//@JsonBackReference("produit")
 	@ManyToOne(fetch = FetchType.EAGER)
 	@OnDelete(action = OnDeleteAction.CASCADE)
@@ -76,15 +78,22 @@ public class LigneCommande   implements Serializable{
 	public void setCommande(Commande commande) {
 		this.commande = commande;
 	}
+	public double getPrix() {
+		return prix;
+	}
+	@JsonSetter
+	public void setPrix(double prix) {
+		this.prix = prix;
+	}
 	public LigneCommande() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public LigneCommande(int quantite, Commande commande) {
+	public LigneCommande(int quantite, double prix, Commande commande, Produit produit) {
 		super();	
 		this.quantite = quantite;
 		this.commande = commande;
+		this.produit = produit;
+		this.prix = prix;
 	}
-	
-	
 }

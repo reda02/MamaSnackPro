@@ -12,9 +12,4 @@ public interface CategorieRepository extends JpaRepository<Categorie, Long>{
 	
 	@Query("SELECT o FROM Categorie o WHERE  o.nomCategorie like :x")
 	Categorie findOneByName(@Param("x") String name);
-	
-
-	
-	
-	
 }

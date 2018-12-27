@@ -10,9 +10,7 @@ import org.springframework.data.repository.query.Param;
 
 import com.mamasnack.entities.Commande;
 
-	public interface CommandeRepository extends JpaRepository<Commande, Long>{
-
-      
+	public interface CommandeRepository extends JpaRepository<Commande, Long>{      
 		
 		@Query("select o from Commande o JOIN o.items c JOIN c.produit r "
 				+ "where c.produit.idProduit = r.idProduit"
@@ -23,7 +21,6 @@ import com.mamasnack.entities.Commande;
 		@Query("SELECT o FROM Commande o INNER JOIN  o.user c WHERE c.idUser like :x")
 		public List<Commande> findCommandeByUser(@Param("x") Long idUser);
 		
-		@Query("SELECT o FROM Commande o WHERE  o.idCommande like :x")
-		public Commande findOne(@Param("x") Long idCmd); 
-		
+		@Query("SELECT o FROM Commande o WHERE o.idCommande like :x")
+		public Commande findOne(@Param("x") Long idCmd);
 	}

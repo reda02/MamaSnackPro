@@ -1,0 +1,5 @@
+[INFO ] 2018-06-10 01:45:37.889 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 7908 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-06-10 01:45:37.922 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-06-10 01:45:47.316 [main] MamasnackWsApplication - Started MamasnackWsApplication in 9.989 seconds (JVM running for 13.471)
+[INFO ] 2018-06-10 01:46:06.572 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[INFO ] 2018-06-10 01:46:09.042 [http-nio-8080-exec-1] CommandeMetierImpl - Info message

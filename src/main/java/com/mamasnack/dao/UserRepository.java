@@ -40,12 +40,12 @@ public interface UserRepository extends JpaRepository<User, Long>{
 	    @Transactional
 		@Query("update User u set u.nomUser = :xnom ,u.prenomUser = :xprenom"
 				+ ",u.adresse = :xadress,u.codePostale = :xcodePostal"
-				+ ",u.dateNaissonce = :xdatenaiss"
-				+ ",u.email = :xemail,u.tel = :xtel"
+				+ ",u.dateNaissance = :xdatenaiss"
+				+ ",u.ville = :xville,u.description = :xdescription, u.mamaActived = :xmamaActived ,u.tel = :xtel"
 				+ " where u.idUser like :xid")
 	    public void update(@Param("xid")  Long xid ,@Param("xnom")  String nom, @Param("xprenom")  String prenom
 	    		,@Param("xadress")  String nadress,@Param("xcodePostal")  int codePostal,@Param("xdatenaiss")  Date datenaiss
-	    		,@Param("xemail")  String email,@Param("xtel")  int tel);
+	    		,@Param("xville")  String ville, @Param("xdescription") String description,@Param("xmamaActived") boolean status, @Param("xtel")  int tel);
 	    
 	    @Query("SELECT o FROM User o WHERE  o.email like :x")
      	public User findOnebyemail(@Param("x") String email);

@@ -232,14 +232,20 @@ public class ProduitMetierImpl implements ProduitMetier {
 
 	@Override
 	public String modifierCategorie(Categorie c) {
-	
+		Categorie existeName = categorieRepository.findOneByName(c.getNomCategorie());
 		if (c.getIdCategorie() == null && !produitRepository.existsById(c.getIdCategorie())) {
 			logger.error(getClass().getName()+
 				    "une erreur est produite lors de l'exécution du web service modifierCategorie : ");
 			return "NOK";
 		}
-		  
-		  
+		if(Objects.nonNull(existeName)){
+			if (c.getNomCategorie().equals(existeName.getNomCategorie())) {
+
+				logger.error(getClass().getName()+
+					    "le nom de categorie existe deja ! ");
+				return "NONOK: le nom de categorie existe deja !";
+			}
+			}
 		categorieRepository.save(c);
     	return "OK";
 	}
@@ -251,10 +257,19 @@ public class ProduitMetierImpl implements ProduitMetier {
 
 	@Override
 	public String ajouterCuisine(Cuisine c) {
+		Cuisine existeName=cuisineRepository.getByName(c.getNameCuisine());
 		if (c.getIdCuisine() != null && cuisineRepository.existsById(c.getIdCuisine())) {
 			logger.error(getClass().getName()+
 				    "IdCuisine est null de l'exécution du web service ajouterCuisine : ");
 			return "NOK";
+		}
+		if(Objects.nonNull(existeName)){
+			if (c.getNameCuisine().equals(existeName.getNameCuisine())) {
+
+				logger.error(getClass().getName()+
+					    "le nom de categorie existe deja ! ");
+				return "NONOK: le nom de categorie existe deja !";
+			}
 		}
 		cuisineRepository.save(c);
 	 return "OK";
@@ -275,6 +290,7 @@ public class ProduitMetierImpl implements ProduitMetier {
 			
 				logger.error(getClass().getName()+
 					    "id Categorie est null de l'exécution du web service supprimerCategorie : ");
+				
 				return "NOK";
 			
 		}else if (cuisine.getIdCuisine()==null){
@@ -300,10 +316,24 @@ public class ProduitMetierImpl implements ProduitMetier {
 
 	@Override
 	public String modifierCuisine(Cuisine c) {
+		Cuisine existeName=cuisineRepository.getByName(c.getNameCuisine());
+		if(cuisineRepository.existsCuisine(c.getIdCuisine())==null) {
+			logger.error(getClass().getName()+
+				    "cet cuisine n'existe pas ");
+			return "NONOK: cet cuisine n'existe pas";
+		}
 		if (c.getIdCuisine() == null && produitRepository.existsById(c.getIdCuisine())) {
 			logger.error(getClass().getName()+
 				    "une erreur est produite lors de l'exécution du web service modifierCuisine : ");
 			return "NOK";
+		}
+		if(Objects.nonNull(existeName)){
+			if (c.getNameCuisine().equals(existeName.getNameCuisine())) {
+
+				logger.error(getClass().getName()+
+					    "le nom de cuisine existe deja ! ");
+				return "NONOK: le nom de cuisine existe deja !";
+			}
 		}
 		cuisineRepository.save(c);
     	return "OK";

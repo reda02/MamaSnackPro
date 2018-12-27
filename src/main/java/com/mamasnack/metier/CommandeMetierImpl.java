@@ -18,6 +18,7 @@ import com.mamasnack.entities.Commande;
 import com.mamasnack.entities.LigneCommande;
 import com.mamasnack.entities.Panier;
 import com.mamasnack.entities.Produit;
+import com.mamasnack.entities.Role;
 import com.mamasnack.entities.User;
 
 @Service
@@ -28,6 +29,8 @@ public class CommandeMetierImpl implements CommandeMetier{
 	private LigneCommandeRepository ligneCommandeRepository ;
 	@Autowired
 	private ProduitMetier produitMetier ;
+	@Autowired
+	private UserMetier userMetier ;
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	@Override
 	public Commande enrigistrerCommande(Panier p, User u) {
@@ -77,8 +80,6 @@ public class CommandeMetierImpl implements CommandeMetier{
 	
 	@Override
 	public List<LigneCommande> getAllLigneDeCommande(long commandeId) {
-		
-		
 		return ligneCommandeRepository.findAllLigneDeCommande(commandeId) ;
 	}
 
@@ -146,7 +147,6 @@ public class CommandeMetierImpl implements CommandeMetier{
 		ligneCommandeRepository.save(l);
     	return "OK";
 	}
-
 	@Override
 	public LigneCommande removeLigneDeCommande(long commandeId, long ligneDeCommandeId) {
 		    
@@ -170,27 +170,27 @@ public class CommandeMetierImpl implements CommandeMetier{
 	        return ligneCmdExiste;
 	}
 
-
-
 	@Override
 	public String addCommande(Commande commande) {
 		//p.setCategorie(getCategorie(IdCat));
 				if (commande.getIdCommande() != null && commandeRepository.existsById(commande.getIdCommande())) {
 					throw new EntityExistsException("There is already existing entity with such ID in the database.");
 				}
-				commandeRepository.save(commande);
+				List<Role> roles = userMetier.findRolebyUser(commande.getMama().getIdUser());
+				//for(Role roul : roles){}
+				Role r = new Role();
+				r.setRoleName("mama");
+				if(!roles.contains(r)){
+					logger.error(getClass().getName()+
+						    "user n'est pas un mama");
+					return "user n'est pas un mama";
+				}
 				return "OK";
-		
 	}
-
-
 
 	@Override
 	public List<LigneCommande> getAllLignebyIdProd(long prodId) {
 		// TODO Auto-generated method stub
 		return ligneCommandeRepository.getAllLignebyIdProd(prodId);
 	}
-
-
-
 }

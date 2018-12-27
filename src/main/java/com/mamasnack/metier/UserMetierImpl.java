@@ -83,7 +83,7 @@ public class UserMetierImpl implements UserMetier{
 	public String modifierUser(User u) {	
        User user =userRepository.findOnebyemail(u.getEmail()) ;
 		
-		if( user!= null){
+		if( user!= null && user.getIdUser()!= u.getIdUser()){
 			
 			logger.error(getClass().getName()+
 				    "email n'est pas unique lors de l'exécution du web service addUser : ");
@@ -106,7 +106,7 @@ public class UserMetierImpl implements UserMetier{
 			u.setPassword(passwordEncoder.encode(u.getPassword()));
 			}
 		userRepository.update(u.getIdUser(),u.getNomUser(),u.getPrenomUser(),u.getAdresse()
-				,u.getCodePostale(),u.getDateNaissonce(),u.getEmail(),u.getTel());
+				,u.getCodePostale(),u.getDateNaissance(),u.getVille(), u.getDescription(), u.isMamaActived(),u.getTel());
 		return "OK";
 	}
 
@@ -234,7 +234,7 @@ public class UserMetierImpl implements UserMetier{
 		    // Report error 
 			return "NOK";
 		}}else{
-		return "NOK";
+		return "EmailNotFound";
 		}		
 	}
 
@@ -296,7 +296,7 @@ public class UserMetierImpl implements UserMetier{
 			// TODO Auto-generated method stub
 			  User user =userRepository.findUsesbyEmail(u.getEmail()) ;
 				
-			  if(!Objects.isNull(user)) {
+			  if(Objects.isNull(user)) {
 					
 					logger.error(getClass().getName()+
 						    "email n'est pas unique lors de l'exécution du web service updatePassword : ");
@@ -312,17 +312,13 @@ public class UserMetierImpl implements UserMetier{
 					return "NOK";
 				}
 				BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
-			
-				
-				
+									
 				if(u.getPassword()!=null){
 					u.setPassword(passwordEncoder.encode(u.getPassword()));
 					}
 				userRepository.updatePwd(u.getEmail(),u.getPassword());
 				return "OK";
-		}
-		
-		
+		}				
 		@Override
 		public String modifierphotoPhUser(User u) {
 			

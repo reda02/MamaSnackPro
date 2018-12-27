@@ -1,0 +1,55 @@
+[INFO ] 2018-07-27 00:31:55.222 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 1908 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:31:55.254 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:35:38.670 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 1624 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:35:38.685 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:37:49.645 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 8704 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:37:49.657 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:38:01.337 [main] MamasnackWsApplication - Started MamasnackWsApplication in 12.253 seconds (JVM running for 14.971)
+[ERROR] 2018-07-27 00:38:06.810 [http-nio-8080-exec-3] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouterProduit : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[ERROR] 2018-07-27 00:38:19.620 [http-nio-8080-exec-1] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouter Categorie : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[INFO ] 2018-07-27 00:39:50.217 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 11032 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:39:50.234 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:39:58.744 [main] MamasnackWsApplication - Started MamasnackWsApplication in 8.971 seconds (JVM running for 10.851)
+[ERROR] 2018-07-27 00:40:44.774 [http-nio-8080-exec-2] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouter Categorie : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[INFO ] 2018-07-27 00:41:22.103 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 11956 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:41:22.114 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:41:28.812 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.289 seconds (JVM running for 9.177)
+[ERROR] 2018-07-27 00:41:33.539 [http-nio-8080-exec-2] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouter Categorie : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[ERROR] 2018-07-27 00:41:36.299 [http-nio-8080-exec-3] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouter Categorie : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[INFO ] 2018-07-27 00:42:10.174 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 4736 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:42:10.182 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:42:17.525 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.815 seconds (JVM running for 9.299)
+[ERROR] 2018-07-27 00:42:41.919 [http-nio-8080-exec-2] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouterProduit : query did not return a unique result: 3; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 3
+[ERROR] 2018-07-27 00:45:13.551 [http-nio-8080-exec-8] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service ajouterProduit : query did not return a unique result: 2; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 2
+[INFO ] 2018-07-27 00:46:33.103 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 13156 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:46:33.122 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:46:39.149 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.426 seconds (JVM running for 7.927)
+[INFO ] 2018-07-27 00:47:21.268 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 12812 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 00:47:21.285 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 00:47:28.076 [main] MamasnackWsApplication - Started MamasnackWsApplication in 7.18 seconds (JVM running for 8.532)
+[ERROR] 2018-07-27 00:47:41.624 [http-nio-8080-exec-3] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplle nom de categorie existe deja ! 
+[ERROR] 2018-07-27 00:56:29.065 [http-nio-8080-exec-3] UserMetierImpl - com.mamasnack.metier.UserMetierImplemail n'est pas unique lors de l'exécution du web service addUser : 
+[INFO ] 2018-07-27 01:06:06.491 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 1936 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 01:06:06.509 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 01:06:14.228 [main] MamasnackWsApplication - Started MamasnackWsApplication in 8.162 seconds (JVM running for 9.48)
+[ERROR] 2018-07-27 01:06:41.495 [http-nio-8080-exec-2] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service updateCuisine : com.mamasnack.entities.Cuisine cannot be cast to java.lang.Boolean
+[INFO ] 2018-07-27 01:09:51.516 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 1940 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 01:09:51.523 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 01:09:56.998 [main] MamasnackWsApplication - Started MamasnackWsApplication in 5.82 seconds (JVM running for 7.168)
+[ERROR] 2018-07-27 01:10:12.224 [http-nio-8080-exec-2] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplcet cuisine n'existe pas 
+[INFO ] 2018-07-27 01:10:51.263 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 12548 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 01:10:51.304 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 01:10:57.741 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.875 seconds (JVM running for 8.771)
+[ERROR] 2018-07-27 01:11:17.242 [http-nio-8080-exec-3] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplle nom de cuisine existe deja ! 
+[ERROR] 2018-07-27 01:11:34.098 [http-nio-8080-exec-7] ProduitMetierImpl - com.mamasnack.metier.ProduitMetierImplcet cuisine n'existe pas 
+[INFO ] 2018-07-27 01:16:05.011 [main] MamasnackWsApplication - Starting MamasnackWsApplication on AYOUB-PC with PID 13020 (C:\Users\aybbk\git\MamaSnackPro\target\classes started by aybbk in C:\Users\aybbk\git\MamaSnackPro)
+[INFO ] 2018-07-27 01:16:05.019 [main] MamasnackWsApplication - The following profiles are active: @spring.profiles.active@
+[INFO ] 2018-07-27 01:16:11.232 [main] MamasnackWsApplication - Started MamasnackWsApplication in 6.624 seconds (JVM running for 7.836)
+[ERROR] 2018-07-27 01:16:17.419 [http-nio-8080-exec-1] ProduitRestService - com.mamasnack.service.ProduitRestServiceune erreur est produite lors de l'exécution du web service updateCategorie : query did not return a unique result: 4; nested exception is javax.persistence.NonUniqueResultException: query did not return a unique result: 4
+[INFO ] 2018-07-27 01:17:17.931 [http-nio-8080-exec-6] CommandeMetierImpl - Info message
+[INFO ] 2018-07-27 01:18:46.746 [http-nio-8080-exec-9] CommandeRestService - getAllLigneDeCommande message
+[INFO ] 2018-07-27 01:19:13.585 [http-nio-8080-exec-10] CommandeMetierImpl - Info message
+[WARN ] 2018-07-27 01:19:13.585 [http-nio-8080-exec-10] CommandeMetierImpl - Warn message
+[ERROR] 2018-07-27 01:19:13.585 [http-nio-8080-exec-10] CommandeMetierImpl - Error message
+[ERROR] 2018-07-27 01:19:13.586 [http-nio-8080-exec-10] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service getLigneDeCommandeById : A JSONObject text must begin with '{' at character 1
+[ERROR] 2018-07-27 01:19:22.091 [http-nio-8080-exec-2] CommandeRestService - com.mamasnack.service.CommandeRestServiceune erreur est produite lors de l'exécution du web service addLigneDeCommande : produit inexistant !

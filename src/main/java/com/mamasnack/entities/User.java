@@ -49,7 +49,7 @@ public class User implements Serializable{
 	private String ville;
 	private int codePostale;
 	@JsonFormat(pattern="dd-MM-yyyy")
-	private Date dateNaissonce;
+	private Date dateNaissance;
 	private String password;
 	private boolean actived;
 	private boolean mamaActived;
@@ -106,7 +106,7 @@ public class User implements Serializable{
 
 
 	public User(@NotNull @Size(min = 1, max = 10) String nomUser, String prenomUser, String email, String photo,
-			String adresse, int tel, String ville, int codePostale, Date dateNaissonce, String password,
+			String adresse, int tel, String ville, int codePostale, Date dateNaissance, String password,
 			boolean actived, boolean mamaActived) {
 		super();
 		this.nomUser = nomUser;
@@ -117,7 +117,7 @@ public class User implements Serializable{
 		this.tel = tel;
 		this.ville = ville;
 		this.codePostale = codePostale;
-		this.dateNaissonce = dateNaissonce;
+		this.dateNaissance = dateNaissance;
 		this.password = password;
 		this.actived = actived;
 		this.mamaActived = mamaActived;
@@ -126,7 +126,7 @@ public class User implements Serializable{
 
 
 	public User(Long idUser, @NotNull @Size(min = 1, max = 10) String nomUser, String prenomUser, String email,
-			String photo, String adresse, int tel, String ville, int codePostale, Date dateNaissonce, String password,
+			String photo, String adresse, int tel, String ville, int codePostale, Date dateNaissance, String password,
 			boolean actived, boolean mamaActived, Collection<Commande> commande) {
 		super();
 		this.idUser = idUser;
@@ -138,7 +138,7 @@ public class User implements Serializable{
 		this.tel = tel;
 		this.ville = ville;
 		this.codePostale = codePostale;
-		this.dateNaissonce = dateNaissonce;
+		this.dateNaissance = dateNaissance;
 		this.password = password;
 		this.actived = actived;
 		this.mamaActived = mamaActived;
@@ -202,11 +202,11 @@ public class User implements Serializable{
 	public void setCodePostale(int codePostale) {
 		this.codePostale = codePostale;
 	}
-	public Date getDateNaissonce() {
-		return dateNaissonce;
+	public Date getDateNaissance() {
+		return dateNaissance;
 	}
-	public void setDateNaissonce(Date dateNaissonce) {
-		this.dateNaissonce = dateNaissonce;
+	public void setDateNaissance(Date dateNaissance) {
+		this.dateNaissance = dateNaissance;
 	}
 	public String getPassword() {
 		return password;

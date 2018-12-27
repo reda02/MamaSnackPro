@@ -14,12 +14,15 @@ app.factory('docService', ['$http', '$q', 'urls', function ($http, $q, urls) {
                 var deferred = $q.defer();                
                 var formData = new FormData();
                 
-                for(var i = 0; i < files.length; i++){
-                	formData.append('files', files[i]);
-                }
-                //formData.append('file', file3);
-                //formData.append('file', file4);
-                //formData.append('file', file5);
+                /*for(var i = 0; i < files.length; i++){
+                	formData.append('file'+i, files[i]);
+                }*/               
+                alert(files);
+                formData.append('file1', files);
+                /*formData.append('file2', files[1]);
+                formData.append('file3', files[2]);
+                formData.append('file4', files[3]);
+                formData.append('file5', files[4]);*/
                 formData.append('json',JSON.stringify(dataObj));
                 console.log(formData);
                 $http.post('http://localhost:8080/addProduit', formData,{

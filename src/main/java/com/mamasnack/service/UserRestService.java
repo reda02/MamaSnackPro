@@ -326,9 +326,9 @@ public class UserRestService {
 
 				if (getRoles != null && !getRoles.isEmpty()) {
 					tab = new JSONArray(mapper.writeValueAsString(getRoles).toString());
-					resultat.put("users", tab);
+					resultat.put("roles", tab);
 				}else{
-					resultat.put("users", "tabVide");
+					resultat.put("roles", "tabVide");
 				}
 				
 				resultat.put("errMess", "");  
@@ -421,7 +421,8 @@ public class UserRestService {
 	
 	
 	@RequestMapping(value="/addPhotoToUser",method=RequestMethod.POST)
-	public String addPhotoToUser(@RequestParam(value="file", required = false) MultipartFile file ,@RequestParam(value="json") String userJson) throws JSONException, IOException {
+	public String addPhotoToUser(@RequestParam(value="file", required = false) MultipartFile file ,
+								@RequestParam(value="userjson" , required = true) String userJson) throws JSONException, IOException {
 		
 		String nomImg = "" ;
 		ObjectMapper mapper = new ObjectMapper(); 

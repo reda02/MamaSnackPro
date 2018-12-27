@@ -41,68 +41,58 @@ public class ProduitRestService {
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	
 	
-	
-	
 	@RequestMapping(value="/addProduit",produces = "application/json",method=RequestMethod.POST)
-	public @ResponseBody String ajouterProduit(@RequestParam(value="files", required = false) MultipartFile[] files,
-			
-	@RequestParam(value="json") String json, Long IdCat) throws JSONException, JsonParseException, JsonMappingException, IOException {    			
-		/*for (Map<String, MultipartFile> map : file) {
-		    for (Map.Entry<String, MultipartFile> entry : map.entrySet()) {		       
-		        System.out.println(entry.getKey() + " - " + entry.getValue());
-		    }
-		}*/
-		ObjectMapper mapper = new ObjectMapper();
-		Produit p = mapper.readValue(json, Produit.class); 
-		/*@RequestParam(value="file2", required = false) MultipartFile file2,
+	public @ResponseBody String ajouterProduit(@RequestParam(value="file1", required = false) MultipartFile file1,				
+		@RequestParam(value="file2", required = false) MultipartFile file2,
 		@RequestParam(value="file3", required = false) MultipartFile file3,
 		@RequestParam(value="file4", required = false) MultipartFile file4,
 		@RequestParam(value="file5", required = false) MultipartFile file5,   
+		@RequestParam(value="json") String json, Long IdCat) throws JSONException, JsonParseException, JsonMappingException, IOException {
+		ObjectMapper mapper = new ObjectMapper();
+		Produit p = mapper.readValue(json, Produit.class);
 		String nomImg = "" ;
 		   String nomImg2 = "" ;
 		   String nomImg3 = "" ;
 		   String nomImg4 = "" ;
 		   String nomImg5 = "" ;
-		   ObjectMapper mapper = new ObjectMapper(); 
-    	   Produit p = mapper.readValue(json, Produit.class); ;
-    	  if (file!=null) {
-			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+    	  if (file1!=null) {
+			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file1.getBytes()));
 			  nomImg = "ImgProduit"+p.getPhoto1();
 			  File destination = new File("src/main/resources/static/images/"+nomImg+".png");// something like C:/Users/tom/Documents/nameBasedOnSomeId.png
 			  ImageIO.write(src, "png", destination);
 			  }
     	  if (file2!=null) {
-			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file2.getBytes()));
 			  nomImg2 = "ImgProduit"+p.getPhoto2();
 			  File destination = new File("src/main/resources/static/images/"+nomImg+".png");// something like C:/Users/tom/Documents/nameBasedOnSomeId.png
 			  ImageIO.write(src, "png", destination);
 			  }
     	  if (file3!=null) {
-			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file3.getBytes()));
 			  nomImg3 = "ImgProduit"+p.getPhoto3();
 			  File destination = new File("src/main/resources/static/images/"+nomImg+".png");// something like C:/Users/tom/Documents/nameBasedOnSomeId.png
 			  ImageIO.write(src, "png", destination);
 			  }
     	  if (file4!=null) {
-			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file4.getBytes()));
 			  nomImg4 = "ImgProduit"+p.getPhoto4();
 			  File destination = new File("src/main/resources/static/images/"+nomImg+".png");// something like C:/Users/tom/Documents/nameBasedOnSomeId.png
 			  ImageIO.write(src, "png", destination);
 			  }
     	  if (file5!=null) {
-			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file.getBytes()));
+			  BufferedImage src = ImageIO.read(new ByteArrayInputStream(file5.getBytes()));
 			  nomImg5 = "ImgProduit"+p.getPhoto4();
 			  File destination = new File("src/main/resources/static/images/"+nomImg+".png");// something like C:/Users/tom/Documents/nameBasedOnSomeId.png
 			  ImageIO.write(src, "png", destination);
-			  } */
+			  } 
 		String Add = null;
 		JSONObject resultat = new JSONObject();
 		try {
-			/*p.setPhoto1(nomImg);
+			p.setPhoto1(nomImg);
 			p.setPhoto2(nomImg2);
 			p.setPhoto3(nomImg3);
 			p.setPhoto4(nomImg4);
-			p.setPhoto5(nomImg5);*/
+			p.setPhoto5(nomImg5);
 			Add =  produitMetier.ajouterProduit(p, IdCat);
 			resultat.put("errMess", Add);
 		    } catch (Exception e) {
@@ -361,12 +351,12 @@ public class ProduitRestService {
 		String Addc = null;
 		JSONObject resultat = new JSONObject();
 		try {
-			Addc =   produitMetier.ajouterCategorie(c);;
+			Addc = produitMetier.ajouterCategorie(c);
 			resultat.put("errMess", Addc);
 		    } catch (Exception e) {
 			resultat.put("errMess", e.getMessage());
 			logger.error(getClass().getName()+
-					"une erreur est produite lors de l'exécution du web service ajouterCategorie : " + e.getMessage());
+					"une erreur est produite lors de l'exécution du web service ajouter Categorie : " + e.getMessage());
 		}
 		return resultat.toString();
 	}

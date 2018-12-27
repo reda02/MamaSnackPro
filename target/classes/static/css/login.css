@@ -79,3 +79,9 @@ h1{
     margin-left: 30px;
     padding-left: 5px;
 }
+.login-error{
+	display: none;
+	text-align: center;
+	color: red;
+	padding: 10px;
+}

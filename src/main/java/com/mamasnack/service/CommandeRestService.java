@@ -84,8 +84,6 @@ public class CommandeRestService  {
 
 	@RequestMapping(value="/listCommandesParProduit/{idProduit}",method=RequestMethod.GET)
 	public String listCommandesParProduit(@PathVariable Long idProduit) throws JSONException {
-	
-		
 		List<Commande> commandes = new ArrayList<>();
 		JSONObject resultat = new JSONObject();
 		JSONArray tab = new JSONArray();

@@ -180,8 +180,21 @@ app.controller("UserController",["$scope","$http","$routeParams","$cookies",func
 					if(res.data.role[0].roleName == "admin")
 						location.href="/app.html";
 					else{
+						alert("hello mama");
 						location.href="/index.html#!/mamaProfil/"+$cookies.get("idUser");
 					}
+				}
+			}else{
+				if(res.data.Msg=="NOK"){
+					$(document).ready(function(){
+						$(".login-error").html("Votre mot de passe est incorrect. Veuillez le vérifier.");
+						$(".login-error").css("display","block");							
+					});
+				}else{
+					$(document).ready(function(){
+						$(".login-error").html("Le nom d’utilisateur entré n’appartient à aucun compte. Veuillez le vérifier et réessayer.");
+						$(".login-error").css("display","block");							
+					});
 				}
 			}
 		});
@@ -252,9 +265,9 @@ app.controller("UserController",["$scope","$http","$routeParams","$cookies",func
 		.then(function(res){
 			$scope.selectedProduct=res.data.produit;
 			if($scope.selectedProduct.steleted==true)
-				$('#select').bootstrapToggle('on');
+				$('#getSelect').bootstrapToggle('on');
 			else
-				$('#select').bootstrapToggle('off');
+				$('#getSelect').bootstrapToggle('off');
 		});
 	};
 		$http.get("http://localhost:8080/listCommandesParUser/"+$cookies.get("idUser"))
