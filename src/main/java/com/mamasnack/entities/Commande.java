@@ -112,8 +112,8 @@ public class Commande  implements Serializable {
 	public double getTotal() {
 		return total;
 	}
-	public void setTotal(double d) {
-		this.total = d;
+	public void setTotal(double total) {
+		this.total = total;
 	}
 	
 	//@JsonIgnore
@@ -124,7 +124,4 @@ public class Commande  implements Serializable {
 	public void setMama(User mama) {
 		this.mama = mama;
 	}
-
-	
-	
 }

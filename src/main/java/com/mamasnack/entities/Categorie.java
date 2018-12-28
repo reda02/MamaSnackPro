@@ -72,7 +72,6 @@ public class Categorie implements Serializable {
 	public void setNomPhoto(String nomPhoto) {
 		this.nomPhoto = nomPhoto;
 	}
-	
 	@JsonIgnore
 	public List<Produit> getProduit() {
 		return produit;

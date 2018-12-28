@@ -170,6 +170,14 @@ public class CommandeMetierImpl implements CommandeMetier{
 	        return ligneCmdExiste;
 	}
 
+	private boolean containsMama(List<Role> roles)
+	{
+		for (Role role : roles) {
+			if (role.getRoleName().equals("mama"))
+				return true;
+		}
+		return false;
+	}
 	@Override
 	public String addCommande(Commande commande) {
 		//p.setCategorie(getCategorie(IdCat));
@@ -177,10 +185,7 @@ public class CommandeMetierImpl implements CommandeMetier{
 					throw new EntityExistsException("There is already existing entity with such ID in the database.");
 				}
 				List<Role> roles = userMetier.findRolebyUser(commande.getMama().getIdUser());
-				//for(Role roul : roles){}
-				Role r = new Role();
-				r.setRoleName("mama");
-				if(!roles.contains(r)){
+				if(!containsMama(roles)){
 					logger.error(getClass().getName()+
 						    "user n'est pas un mama");
 					return "user n'est pas un mama";

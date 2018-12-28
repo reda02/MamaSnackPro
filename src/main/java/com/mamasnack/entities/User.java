@@ -53,7 +53,8 @@ public class User implements Serializable{
 	private String password;
 	private boolean actived;
 	private boolean mamaActived;
-	
+	private Date dateAjout;
+
 	//@JsonManagedReference("commande")
 	@OneToMany(mappedBy="user",fetch=FetchType.LAZY)
 	private Collection<Commande>commande;
@@ -107,7 +108,7 @@ public class User implements Serializable{
 
 	public User(@NotNull @Size(min = 1, max = 10) String nomUser, String prenomUser, String email, String photo,
 			String adresse, int tel, String ville, int codePostale, Date dateNaissance, String password,
-			boolean actived, boolean mamaActived) {
+			boolean actived, boolean mamaActived, Date dateAjout) {
 		super();
 		this.nomUser = nomUser;
 		this.prenomUser = prenomUser;
@@ -121,13 +122,14 @@ public class User implements Serializable{
 		this.password = password;
 		this.actived = actived;
 		this.mamaActived = mamaActived;
+		this.dateAjout = dateAjout;
 	}
 
 
 
 	public User(Long idUser, @NotNull @Size(min = 1, max = 10) String nomUser, String prenomUser, String email,
 			String photo, String adresse, int tel, String ville, int codePostale, Date dateNaissance, String password,
-			boolean actived, boolean mamaActived, Collection<Commande> commande) {
+			boolean actived, boolean mamaActived, Date dateAjout, Collection<Commande> commande) {
 		super();
 		this.idUser = idUser;
 		this.nomUser = nomUser;
@@ -142,6 +144,7 @@ public class User implements Serializable{
 		this.password = password;
 		this.actived = actived;
 		this.mamaActived = mamaActived;
+		this.dateAjout = dateAjout;
 		this.commande = commande;
 		//this.message = message;
 	}
@@ -234,6 +237,14 @@ public class User implements Serializable{
 	}
 	public void setMamaActived(boolean mamaActived) {
 		this.mamaActived = mamaActived;
+	}
+
+	public Date getDateAjout() {
+		return dateAjout;
+	}
+
+	public void setDateAjout(Date dateAjout) {
+		this.dateAjout = dateAjout;
 	}
 
 	public Collection<Role> getRole() {
